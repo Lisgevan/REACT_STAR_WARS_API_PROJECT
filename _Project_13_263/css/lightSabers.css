@@ -1,0 +1,269 @@
+.lightsaber {
+	position: relative;
+	padding-top: 2em;
+	margin-left: 3em;
+	z-index: 2;
+}
+
+.lightsaber label {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 88;
+	text-indent: -9999px;
+	width: 50px;
+	height: 18px;
+	border-bottom: solid 4px grey;
+	border-top: solid 5px grey;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background: rgb(226, 226, 226); /* Old browsers */
+	background: linear-gradient(
+		to right,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(219, 219, 219, 1) 50%,
+		rgba(209, 209, 209, 1) 51%,
+		rgba(254, 254, 254, 1) 100%
+	); /* W3C */
+	background: -moz-linear-gradient(
+		left,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(219, 219, 219, 1) 50%,
+		rgba(209, 209, 209, 1) 51%,
+		rgba(254, 254, 254, 1) 100%
+	); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0%, rgba(226, 226, 226, 1)),
+		color-stop(50%, rgba(219, 219, 219, 1)),
+		color-stop(51%, rgba(209, 209, 209, 1)),
+		color-stop(100%, rgba(254, 254, 254, 1))
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(
+		left,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(219, 219, 219, 1) 50%,
+		rgba(209, 209, 209, 1) 51%,
+		rgba(254, 254, 254, 1) 100%
+	); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(
+		left,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(219, 219, 219, 1) 50%,
+		rgba(209, 209, 209, 1) 51%,
+		rgba(254, 254, 254, 1) 100%
+	); /* Opera 11.10+ */
+	background: -ms-linear-gradient(
+		left,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(219, 219, 219, 1) 50%,
+		rgba(209, 209, 209, 1) 51%,
+		rgba(254, 254, 254, 1) 100%
+	); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 */
+}
+
+.lightsaber .switch {
+	background: #b94a37;
+	width: 10px;
+	height: 5px;
+	display: block;
+	position: absolute;
+	bottom: 17px;
+	left: 13px;
+	transition: left 200ms;
+	-moz-transition: left 200ms;
+	-webkit-transition: left 200ms;
+	-o-transition: left 200ms;
+	-ms-transition: left 200ms;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+}
+
+.lightsaber input[type="checkbox"] {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	-o-opacity: 0;
+	-ms-opacity: 0;
+	z-index: 77;
+}
+
+.lightsaber .plasma {
+	transition: width 300ms;
+	-moz-transition: width 300ms;
+	-webkit-transition: width 300ms;
+	-o-transition: width 300ms;
+	-ms-transition: width 300ms;
+	border-radius: 12px 12px 0 0;
+	position: absolute;
+	bottom: 5px;
+	left: 45px;
+	height: 10px;
+	display: block;
+	filter: blur(1px);
+	-moz-filter: blur(1px);
+	-webkit-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	width: 0;
+}
+
+.lightsaber input[type="checkbox"]:checked ~ div.plasma {
+	width: 350px;
+}
+
+.lightsaber input[type="checkbox"]:hover ~ div.switch {
+	background: #c09853;
+	left: 12px;
+}
+
+.lightsaber input[type="checkbox"]:checked ~ div.switch {
+	background: #468847;
+}
+
+.yoda {
+	background: rgb(135, 220, 90); /* Old browsers */
+	background: linear-gradient(
+		to top,
+		rgb(135, 220, 90) 0%,
+		rgb(254, 254, 254) 30%,
+		rgb(254, 254, 254) 50%,
+		rgb(254, 254, 254) 70%,
+		rgb(135, 220, 90) 100%
+	); /* W3C */
+	background: -moz-linear-gradient(
+		bottom,
+		rgb(135, 220, 90) 0%,
+		rgb(254, 254, 254) 30%,
+		rgb(254, 254, 254) 50%,
+		rgb(254, 254, 254) 70%,
+		rgb(135, 220, 90) 100%
+	); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0%, rgb(135, 220, 90)),
+		color-stop(30%, rgb(254, 254, 254)),
+		color-stop(50%, rgb(254, 254, 254)),
+		color-stop(70%, rgb(254, 254, 254)),
+		color-stop(100%, rgb(135, 220, 90))
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(
+		bottom,
+		rgb(135, 220, 90) 0%,
+		rgb(254, 254, 254) 30%,
+		rgb(254, 254, 254) 50%,
+		rgb(254, 254, 254) 70%,
+		rgb(135, 220, 90) 100%
+	); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(
+		bottom,
+		rgb(135, 220, 90) 0%,
+		rgb(254, 254, 254) 30%,
+		rgb(254, 254, 254) 50%,
+		rgb(254, 254, 254) 70%,
+		rgb(135, 220, 90) 100%
+	); /* Opera 11.10+ */
+	background: -ms-linear-gradient(
+		bottom,
+		rgb(135, 220, 90) 0%,
+		rgb(254, 254, 254) 30%,
+		rgb(254, 254, 254) 50%,
+		rgb(254, 254, 254) 70%,
+		rgb(135, 220, 90) 100%
+	); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87dc5a', endColorstr='#87dc5a',GradientType=1 ); /* IE6-9 */
+	animation-name: yoda;
+	-moz-animation-name: yoda;
+	-webkit-animation-name: yoda;
+	-o-animation-name: yoda;
+	-ms-animation-name: yoda;
+	animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+}
+
+div {
+	-webkit-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+/* Animations */
+@keyframes yoda {
+	from {
+		box-shadow: 0 0 10px #7ec855;
+	}
+	50% {
+		box-shadow: 0 0 16px #7ec855;
+	}
+	to {
+		box-shadow: 0 0 10px #7ec855;
+	}
+}
+@-moz-keyframes yoda {
+	from {
+		box-shadow: 0 0 10px #7ec855;
+	}
+	50% {
+		box-shadow: 0 0 16px #7ec855;
+	}
+	to {
+		box-shadow: 0 0 10px #7ec855;
+	}
+}
+@-webkit-keyframes yoda {
+	from {
+		box-shadow: 0 0 10px #7ec855;
+	}
+	50% {
+		box-shadow: 0 0 16px #7ec855;
+	}
+	to {
+		box-shadow: 0 0 10px #7ec855;
+	}
+}
+@-o-keyframes yoda {
+	from {
+		box-shadow: 0 0 10px #7ec855;
+	}
+	50% {
+		box-shadow: 0 0 16px #7ec855;
+	}
+	to {
+		box-shadow: 0 0 10px #7ec855;
+	}
+}
+@-ms-keyframes yoda {
+	from {
+		box-shadow: 0 0 10px #7ec855;
+	}
+	50% {
+		box-shadow: 0 0 16px #7ec855;
+	}
+	to {
+		box-shadow: 0 0 10px #7ec855;
+	}
+}

@@ -1,11 +1,12 @@
-// import logo from './logo.svg';
-// import "./css/App.css";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<p>Canvas Creation</p>
+				<img src={logo} className="App-logo" alt="logo" />
+				<p>Hello World again</p>
 			</header>
 		</div>
 	);
