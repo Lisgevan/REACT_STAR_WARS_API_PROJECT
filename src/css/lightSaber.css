@@ -1,12 +1,13 @@
 .light_saber {
-	height: 460px;
+	height: 100px;
 	width: 10px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 5em;
+	/* margin: 10em; */
+	z-index: 2;
 }
 .back {
-	height: 460px;
-	width: 10px;
+	height: 100px;
+	width: 0px;
 	position: relative;
 	transform: rotate(270deg);
 }
@@ -19,8 +20,9 @@
 	left: -8px;
 	top: 85px;
 	transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
-	//animation: lightUp2 0.6s cubic-bezier(0.860, 0.000, 0.070, 1.000);
-	//animation: glow_animation 0.8s infinite;
+	animation: lightUp2 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+	animation: glow_animation 0.8s infinite;
+	background-color: #06c000;
 }
 .middle_glow {
 	height: 0px;
@@ -30,24 +32,25 @@
 	top: 85px;
 	filter: blur(2px);
 	transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
-	//animation: lightUp1 0.6s cubic-bezier(0.860, 0.000, 0.070, 1.000);
-	//animation: glow_animation 0.8s infinite ;
+	animation: lightUp1 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+	animation: glow_animation 0.8s infinite;
+	background-color: #3ef347;
 }
 .core_glow {
 	height: 0px;
 	width: 6px;
-	background-color: #fff;
+	background-color: rgb(162, 253, 146);
 	border-radius: 5px;
 	position: absolute;
 	top: 85px;
 	filter: blur(1px);
 	transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
-	//animation: lightUp3 0.6s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+	animation: lightUp3 0.6s cubic-bezier(0.86, 0, 0.07, 1);
 	left: 2px;
 }
 
 .handle {
-	height: 30px;
+	height: 55px;
 	width: 55px;
 	position: absolute;
 	top: 0;

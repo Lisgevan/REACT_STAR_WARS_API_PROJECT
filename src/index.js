@@ -4,15 +4,18 @@ import reportWebVitals from "./reportWebVitals";
 
 // import App from "./App";
 import Canvas from "./canvas";
+import Main from "./main";
 
 import "./css/index.css";
 import "./css/starwarsintro.css";
 import "./css/App.css";
+import "./css/lightSaber.css";
 
 ReactDOM.render(
 	<React.StrictMode>
 		{/* <App /> */}
 		<Canvas />
+		<Main />
 	</React.StrictMode>,
 	document.getElementById("root")
 );
